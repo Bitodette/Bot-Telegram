@@ -32,7 +32,7 @@ def add_tugas(update, context):
     return result
 
 def main():
-    token = "YOUR_BOT_TOKE"  # Replace with your bot token
+    token = "YOUR_BOT_TOKEN"  # Replace with your bot token
     init_db()
     app = ApplicationBuilder().token(token).build()
     app.add_handler(CommandHandler("start", start))
